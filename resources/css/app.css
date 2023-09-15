@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #222222;
+    --backgroundtwo: #8B8B8B
+}
+
+body {
+    height: 100vh;
+    font-family: 'Golos Text', serif;
+    background: #050505;
+    color: #fff;
+    @apply p-4
+}
+.bg-gray-900 {
+    background:  #0f0f0f !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    @apply bg-fuchsia-950
+}
+
+::-webkit-scrollbar-track { /* фон */
+    background: #333;
+}
+
+.title {
+    @apply text-2xl mt-4 text-gray-300 font-medium
+}
+
+.main_content .main_img {
+    width: 100%;
+
+    @apply rounded-lg h-full
+}
+
+.main_content_text {
+    border-radius: 10px;
+}
+
+.content_music {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    @apply hover:bg-fuchsia-950 rounded-lg cursor-pointer transition-all
+}
+
+.content_music .content_music_name {
+    font-weight: 400;
+}
+
+.content_music .content_music_name a {
+    @apply text-gray-500 font-medium hover:text-gray-600 transition-all
+}
+
+.active {
+    @apply bg-fuchsia-950
+}
+
+.content_music .content_button button, .content_music .content_button a {
+    @apply rounded-lg p-2  hover:bg-black hover:text-fuchsia-600
+}
+
+.content_music .content_button video:focus-visible {
+    border: 0;
+    outline: 0;
+}
+
+.main_content video {
+    outline: 0;
+}
+.musics::-webkit-scrollbar {
+    width: 5px;
+}
+
+.musics::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    @apply bg-fuchsia-950
+}
+.musics::-webkit-scrollbar-track { /* фон */
+    background: #333;
+}
